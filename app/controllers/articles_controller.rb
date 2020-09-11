@@ -5,7 +5,7 @@ class ArticlesController < ApplicationController
     # method index (default webpage) -> list all articles
     def index
         @articles = Article.all
-      end
+    end
       
     
     # method show -> show a single article  

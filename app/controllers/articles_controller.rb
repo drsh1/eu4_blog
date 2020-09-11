@@ -12,10 +12,14 @@ class ArticlesController < ApplicationController
     def show
         @article = Article.find(params[:id])  # find article in database by id = ..
 
+        # this section to handle comments
+        @comment = Comment.new  # create new COMMENT so rails can figure out which fields COMMENT has
+        @comment.article_id = @article.id
+
     end
 
 
-    # method new -> create a new article
+    # method new -> create a new ARTICLE object so rails can figure out which fields ARTICLE has
     def new
         @article = Article.new
   

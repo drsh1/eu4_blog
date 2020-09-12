@@ -62,4 +62,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # added gems for this project
-gem "paperclip"
+#------------------------------
+gem "paperclip"  # handles adding files (images)
+gem 'sorcery'    # authentication
+

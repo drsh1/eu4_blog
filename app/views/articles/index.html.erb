@@ -1,7 +1,8 @@
 <h1>All Articles</h1>
 
 
-<%= link_to "<< Go to Tags List", tags_path %>
+<%= link_to "<< Go to Tags List", tags_path(tag) %>
+
 
 
 <!-- list of articles, each title is a link -->
@@ -14,4 +15,7 @@
   <% end %>
 </ul>
 
+<!-- create a new article -->
+<% if logged_in? %>
 <%= link_to "Create a New Article", new_article_path, class: "new_article" %>  <!-- class for css styling -->
+<% end %>
